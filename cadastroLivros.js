@@ -1,40 +1,39 @@
-//1. Cadastro de livro
 var livros = [
     {
       titulo: "Tender Is the Flesh",
       preco: 53.85,
       autor: "Agustina Bazterrica",
       editora: "Scribner",
-      ehTraducao: true,
+      ehTraducao: true
     },
     {
       titulo: "A máquina do tempo",
       preco: 13.54,
       autor: "H. G. Wells",
       editora: "L&PM Pocket",
-      ehTraducao: true,
+      ehTraducao: true
     },
     {
       titulo: "salt. ",
       preco: 118.54,
       autor: "nayyirah waheed",
       editora: null,
-      ehTraducao: false,
-    },
-  ];
+      ehTraducao: false
+    }
+  ]
  
-  function adicionarLivro (titulo, preco,autor, editora, ehTraducao){
-    let livro= {
-         titulo:titulo,
-         preco:preco,
-         autor:autor,
-         editora:editora,
+  function adicionarLivro(titulo, preco,autor, editora, ehTraducao){
+    let livro = {
+         titulo: titulo,
+         preco: preco,
+         autor: autor,
+         editora: editora,
          ehTraducao:ehTraducao
         
     }
      
-   livros.push (livro)
+   livros.push(livro)
  }
 
- adicionarLivro ("JavaScript: O Guia Definitivo", 160, "David Flanagan", "BookMan Editora Ltda", true)
- console.log(livros)
+ console.log(adicionarLivro ("JavaScript: O Guia Definitivo", 160, "David Flanagan", "BookMan Editora Ltda", true))
+ 
