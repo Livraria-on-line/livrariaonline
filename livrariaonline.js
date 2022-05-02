@@ -76,6 +76,45 @@ console.log(" ")
   for(let listar of clubes){
   console.log(listar.nome)
   };
+  //===============================3
+  var clientes = [
+    {
+      id: 1,
+      nome: "Rogério Lucas",
+      sobrenome: "Silva",
+      idade: 30,
+      contato: "4002-8922",
+    },
+    {
+      id: 2,
+      nome: "Roberto Carlos",
+      sobrenome: "Braga",
+      idade: 70,
+      contato: "(11) 9 1111-1111",
+    },
+    {
+      id: 3,
+      nome: "Sylvester",
+      sobrenome: "Stallone",
+      idade: 80,
+      contato: "(22) 9 2222-2222",
+    },
+  ];
+
+ 
+function buscarCliente(id){
+  var retorno = clientes.find((nome) => {
+    return nome.id ===id;
+})
+  
+  if (retorno!= undefined){
+    return retorno
+  }else{
+    return "Cliente não encontrado"
+  }
+
+}
+console.log(buscarCliente(7))
 
 //==================================4
 console.log(" ")
