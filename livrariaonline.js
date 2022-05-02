@@ -160,8 +160,7 @@ console.log(" ")
 addClientes(4,"victor","hugo",22,"98158-6478")
 console.log(clientes)
     
-console.log(listar(3,"victor","hugo",22,190))
-console.log(clientes)
+
 
 //==================================5
 console.log(" ")
